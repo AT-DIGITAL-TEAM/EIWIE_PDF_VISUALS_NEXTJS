@@ -1,5 +1,5 @@
 import { User } from "@/types";
-
+import Image from "next/image";
 const SenderReceiver: React.FC<{ user: User }> = ({ user }) => {
 	const displayUserInformation = () => {
 		return (
@@ -32,7 +32,7 @@ const SenderReceiver: React.FC<{ user: User }> = ({ user }) => {
 			<div>
 				{user.icon && (
 					<div style={{ marginBottom: "10px" }}>
-						<img src={user.icon} alt="Company icon" height={35} width={115} />
+						<Image src={user.icon} alt="Company icon" height={35} width={115} />
 					</div>
 				)}
 				<div>
